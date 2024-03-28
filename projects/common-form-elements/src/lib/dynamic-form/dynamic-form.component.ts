@@ -176,7 +176,7 @@ export class DynamicFormComponent implements OnInit, OnChanges, OnDestroy  {
         break;
       case 'date':
         defaultVal = element.default || null;
-        break;  
+        break;
       case 'dialcode':
         defaultVal = element.default || null;
         break;
@@ -251,6 +251,9 @@ export class DynamicFormComponent implements OnInit, OnChanges, OnDestroy  {
       case 'radio':
         defaultVal = element.default || null;
         break;
+      case 'matrix':
+        defaultVal = element.default || null;
+        break;
     }
 
     formValueList.push(defaultVal);
@@ -264,6 +267,9 @@ export class DynamicFormComponent implements OnInit, OnChanges, OnDestroy  {
             element.inputType === 'frameworkCategorySelect') {
               validationList.push(Validators.required);
             } else if (element.inputType === 'checkbox') {
+              validationList.push(Validators.requiredTrue);
+            }
+            else if (element.inputType === 'matrix') {
               validationList.push(Validators.requiredTrue);
             } else {
               validationList.push(Validators.required);
@@ -306,7 +312,7 @@ export class DynamicFormComponent implements OnInit, OnChanges, OnDestroy  {
             break;
           case 'noOfFields':
               validationList.push(this.checkFields.bind(this, element.validations[i]));
-            break;  
+            break;
           case 'minDate':
             validationList.push(this.compareDate.bind(this, element.validations,element.validations[i]));
             break;
