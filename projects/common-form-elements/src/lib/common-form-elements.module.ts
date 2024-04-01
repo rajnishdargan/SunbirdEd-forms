@@ -83,7 +83,7 @@ import { MatrixComponent } from './matrix/matrix.component';
         DynamicDialcodeComponent,
         DynamicFrameworkComponent,
         DynamicDateComponent,
-DynamicRichtextComponent,
+        DynamicRichtextComponent,
         DynamicInputFieldComponent,
         DynamicInfoComponent,
         MatrixComponent
