@@ -1,6 +1,6 @@
 {
     "name": "@project-sunbird/common-form-elements",
-    "version": "8.0.0-beta-0",
+    "version": "8.0.5",
     "peerDependencies": {
         "@angular/common": ">=13.3.12",
         "@angular/core": ">=13.3.12",
