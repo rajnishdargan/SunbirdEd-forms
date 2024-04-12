@@ -44,6 +44,7 @@ import { DynamicInputFieldComponent } from './dynamic-input-field/dynamic-input-
 import { DynamicInfoComponent } from './dynamic-info/dynamic-info.component';
 
 import { MaterialModule } from './material.module';
+import { MatrixComponent } from './matrix/matrix.component';
 
 @NgModule({
     declarations: [
@@ -84,7 +85,8 @@ import { MaterialModule } from './material.module';
         DynamicDateComponent,
         DynamicRichtextComponent,
         DynamicInputFieldComponent,
-        DynamicInfoComponent
+        DynamicInfoComponent,
+        MatrixComponent
     ],
     imports: [
         CommonModule,
